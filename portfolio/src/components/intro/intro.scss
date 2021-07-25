@@ -1,0 +1,85 @@
+.intro
+{
+    background-color: white;
+    display: flex;
+
+    .left
+    {
+        flex: 0.5;
+        overflow: hidden;
+        .imgContainer
+        {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            background-color: crimson;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+            img
+            {
+                height: 90%;
+            }
+        }
+        
+    }
+    .right
+    {
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .wrapper
+        {
+
+            h2
+            {
+                font-size: 40px;
+            }
+            
+            h1
+            {
+                font-size: 20px;
+                span{
+                    color: crimson;
+                }
+            }
+
+            .ityped-cursor{
+                animation: blink 1s infinite;
+
+                @keyframes blink {
+
+                    50%
+                    {
+                        opacity: 1;
+                    }
+
+                    100%
+                    {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        a
+        {
+            position: absolute;
+            bottom: 10px;
+
+            img{
+                animation: arrowBlink 2s infinite; 
+            }
+
+            @keyframes arrowBlink {
+               100%
+               {
+                   opacity: 0;
+               }
+            }
+        }
+    }
+}

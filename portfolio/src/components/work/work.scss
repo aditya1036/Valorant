@@ -1,0 +1,131 @@
+@import '../../global.scss';
+.work
+{
+    background-color:$mainColor;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+        .arrow
+        {
+            height: 50px;
+            position: absolute;
+            cursor: pointer;
+
+            &.left
+            {
+                    left: 100px;
+                    transform: rotate(180deg);
+            }
+
+            &.right
+            {
+                right: 100px;
+            }
+        }
+
+
+
+    .slider
+    {
+        position: absolute;
+        height: 350px;
+        display: flex;
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        transition: all 2s ease;
+
+
+        .container
+        {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item
+            {
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+                .left
+                {
+                    flex: 4;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .leftcontainer
+                    {
+                        height: 70%;
+                        width: 90%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        .imgcontainer
+                        {
+                            width: 40%;
+                            height: 40%;
+                            border-radius: 50%;
+                            display: flex;
+                            background-color: lightcyan;
+                            align-items: center;
+                            justify-content: center;
+                            img
+                            {
+                                width: 100%;
+                                height: 100%;
+
+                            }
+                            
+                        
+                            
+                            
+                        }
+
+                        h3
+                            {
+                                font-size: 30px;
+                            }
+                    }
+
+                }
+
+                .right
+                {
+                    flex:8;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    img{
+                        border-radius: 20px;
+                        transform: rotate(-13deg);
+                    }
+
+                }
+            }
+            
+            
+            
+        }
+
+        
+        
+    }
+    
+}

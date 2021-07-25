@@ -1,0 +1,19 @@
+@import '../../global.scss';
+
+.portfoliolist
+{
+
+        font-size: medium;
+        font-weight: 300;
+        margin-right: 50px;
+        padding: 7px;
+        cursor: pointer;
+    
+    
+        &.active{
+            background-color: crimson;
+            color: white;
+            border-radius: 10%;
+        }
+}
+
